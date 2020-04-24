@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flask app</title>
+	</head>
+	<body>
+		<h1>Lorem Ipsum blog</h1>
+		{% for dict_item in parent_dict %}
+				<h3>Title: {{ dict_item["title"] }}</h3>
+				<p><h4>Content:</h4> {{ dict_item["content"] }}</p>
+				<hr>
+		{% endfor %}
+	</body>
+</html>
